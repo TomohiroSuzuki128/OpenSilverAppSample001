@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="OpenSilverAppSample001.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:OpenSilverAppSample001"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <StackPanel>
+        <TextBlock Margin="10" FontSize="20" Text="Hello World!" x:Name="TextBlock1"/>
+
+        <TextBlock Margin="10" FontSize="20" TextWrapping="Wrap" HorizontalAlignment="Left" >色々なスタイルも Silverlight 同様に設定できます。
+        </TextBlock>
+        <TextBlock Margin="10" FontSize="20" TextWrapping="Wrap" HorizontalAlignment="Left" >
+           <Span FontWeight="Bold">太字</Span>
+            -
+            <Span Background="Silver" Foreground="Maroon">背景色</Span>
+            -
+            <Span TextDecorations="Underline">下線</Span>
+            -
+            <Span FontStyle="Italic">斜体</Span>
+            -
+            <Span Foreground="Green">
+                緑色の字
+                <Bold>緑色の太字</Bold>
+                -
+                <Italic>緑色の斜体</Italic>
+            </Span>
+        </TextBlock>
+
+        <Rectangle
+            Margin="10" 
+            HorizontalAlignment="Left"
+            Height="100"
+            Width="150"
+            Fill="Orange"
+        />
+        
+        <TextBlock Margin="10" FontSize="20" TextWrapping="Wrap" HorizontalAlignment="Left" >
+            終わり
+        </TextBlock>
+    </StackPanel>
+    
+</Page>
